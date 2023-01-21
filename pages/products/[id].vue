@@ -1,5 +1,9 @@
 <template>
   <div>
+    <Head>
+      <Title>Nuxt Single product page for {{ product.title }}</Title>
+      <Meta name="description" :content="product.description"></Meta>
+    </Head>
     <ProductDetails :product="product" />
   </div>
 </template>

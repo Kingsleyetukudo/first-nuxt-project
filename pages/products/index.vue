@@ -15,6 +15,13 @@ definePageMeta({
 });
 
 const { data: products } = await useFetch("https://fakestoreapi.com/products");
+
+// how to add meta and head title in a page
+
+useHead({
+  title: "Nuxt 3 | products",
+  meta: [{ name: "description", content: "Nuxt products page" }],
+});
 </script>
 
 <style scoped></style>
