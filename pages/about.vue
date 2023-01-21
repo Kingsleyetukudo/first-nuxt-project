@@ -9,10 +9,14 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, cumque magni
       facilis repellendus ratione dolorem nesciunt? Atque error non totam!
     </p>
+
+    <p>{{ data }}</p>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const { data } = await useFetch("/api/currency/NGN");
+</script>
 
 <style scoped>
 h2 {
